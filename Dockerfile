@@ -1,4 +1,4 @@
-FROM smlabt/node
+FROM node:10-alpine
 
 RUN apk --update add python bash git && \
     rm -rf /var/cache/apk/*
