@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN apk --update add python bash git g++ && \
+RUN apk --update add python bash git g++ make && \
     rm -rf /var/cache/apk/*
 RUN npm i -g --unsafe-perm node-gyp && \
     npm cache clean --force
